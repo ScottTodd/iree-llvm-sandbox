@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    let isInitialized = false;
+    let hasRun = false;
+    let deferredEventPayload = null;
+
+    function runIreeOpt(payload) {
+      // TODO(scotttodd): error handling (empty flags)
+      let arguments = payload.flags;
+
+      if (payload.fileContents) {
+        // https://emscripten.org/docs/api_reference/Filesystem-API.html#FS.writeFile
+        // We could also use stdin: https://stackoverflow.com/a/33119868
+        const fileName = "input.mlir";
+        FS.writeFile(fileName, payload.fileContents);
+        arguments.push(fileName);
+      }
+
+      window.parent.postMessage({ message: "wasmCallMainStarting" }, "*");
+      callMain(arguments);
+      window.parent.postMessage({ message: "wasmCallMainFinished" }, "*");
+      hasRun = true;
+    }
+
+    var Module = {
+      print: function (text) {
+        window.parent.postMessage({ message: "wasmPrint", text: text }, "*");
+      },
+      printErr: function (text) {
+        window.parent.postMessage({ message: "wasmPrintErr", text: text }, "*");
+      },
+      onRuntimeInitialized: function () {
+        isInitialized = true;
+        if (deferredEventPayload) {
+          runIreeOpt(deferredEventPayload);
+        }
+      },
+      // https://emscripten.org/docs/api_reference/module.html#Module.noInitialRun
+      noInitialRun: true,
+    };
+
+    window.addEventListener("message", () => {
+      if (event.data.message != "runIreeOpt") {
+        return;
+      }
+
+      if (hasRun) { return; }
+
+      if (isInitialized) {
+        runIreeOpt(event.data);
+      } else {
+        deferredEventPayload = event.data;
+      }
+    }, false);
+  </script>
+  <!--
+    This script was generated following the instructions at
+    https://gist.github.com/ScottTodd/7898981998cefb60902d4fbc8a471ccf
+   -->
+  <script src="tools/iree-opt.js"></script>
+</body>
+
+</html>

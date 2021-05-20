@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>IREE-Fiddle Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- https://getbootstrap.com/ for some webpage styling-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <link href="../stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #0d0f15; color: #ABB2BF">
+  <h1>IREE-Fiddle Demo</h1>
+
+  <p>
+    Code editor powered by <a href="https://codemirror.net/">CodeMirror</a> and
+    using
+    <a href="https://github.com/NeekSandhu/codemirror-textmate">codemirror-textmate</a>
+    for syntax highlighting with
+    <a href="https://github.com/llvm/llvm-project/blob/main/mlir/utils/textmate/mlir.json">MLIR syntax</a>.
+  </p>
+
+  <p>
+    Running the IREE compiler tool
+    <a href="https://github.com/google/iree/blob/main/iree/tools/iree-opt-main.cc">iree-opt</a>
+    compiled to WebAssembly via <a href="https://emscripten.org/">Emscripten</a>.
+    See
+    <a href="https://gist.github.com/ScottTodd/7898981998cefb60902d4fbc8a471ccf">this gist</a>
+    and
+    <a href="https://gist.github.com/ScottTodd/f30d9d26254de82648de37d5ed445cbc">this gist</a>
+    for instructions on how to build MLIR tools through Emscripten.
+  </p>
+
+  <p>Input:</p>
+  <textarea id="opt-input"></textarea>
+  <br>
+  <p>Output:</p>
+  <!-- TODO(scotttodd): css, lol (this is tiny and looks bad) -->
+  <input type="range" min="1" max="100" value="50" class="form-range" id="opt-output-slider">
+  <textarea id="opt-output"></textarea>
+  <br>
+  <p>Flags:</p>
+  <textarea id="opt-flags"></textarea>
+
+  <br>
+  <p><button onclick="runIreeOpt()" class="btn btn-primary">Run iree-opt</button></p>
+
+  <iframe id="wasmFrame" src="../iree-opt-frame.html" style="display: none;"></iframe>
+
+  <!--
+    This file was generated from https://github.com/NeekSandhu/codemirror-textmate/tree/master/demo
+    * Add MLIR syntax ('source.mlir', language: 'mlir')
+    * Copy files from chrome dev tools when running the dev server
+      (should really be a release mode nodejs/webpack thing)
+    * It then has some manual edits to interface with this script like setting
+      `window.ireeInputEditor = inputEditor`
+      (exporting from module-private variables to globals... very hacky)
+    * It requires onigasm.wasm (see https://github.com/NeekSandhu/onigasm)
+  -->
+  <!-- TODO(scotttodd): non-dev build (strip dev server code? minify?) -->
+  <script src="../libraries/codemirror-textmate.js"></script>
+
+  <script>
+    window.onCodemirrorLoaded = () => {
+      window.ireeInputEditor.setSize(undefined, 150);
+      window.ireeOutputEditor.setSize(undefined, 300);
+      window.ireeFlagsEditor.setSize(undefined, 40);
+
+      window.ireeInputEditor.setValue(`func @add(%arg0 : tensor<i32>, %arg1 : tensor<i32>) -> (tensor<i32>) attributes { iree.module.export } {
+  %result = "mhlo.add"(%arg0, %arg1) : (tensor<i32>, tensor<i32>) -> tensor<i32>
+  return %result : tensor<i32>
+}`);
+      window.ireeFlagsEditor.setValue("-iree-transformation-pipeline -iree-hal-target-backends=vmla -allow-unregistered-dialect -print-ir-after-all");
+    };
+
+    const wasmFrame = document.getElementById("wasmFrame");
+    const wasmFrameWindow = wasmFrame.contentWindow;
+    const optOutputSlider = document.getElementById("opt-output-slider");
+    let rawOutputText = "";
+    let hasRealOutputStarted = false;
+    let splitOutputText = [];
+
+    optOutputSlider.addEventListener("input", (event) => {
+      if (event.target.value < splitOutputText.length) {
+        window.ireeOutputEditor.setValue(splitOutputText[event.target.value]);
+      }
+    });
+
+    window.addEventListener("message", () => {
+      if (event.data.message == "wasmCallMainStarting") {
+        // Reset persistent state.
+        window.ireeOutputEditor.setValue("");
+        window.ireeOutputEditor.clearHistory();
+        splitOutputText = [];
+      } else if (event.data.message == "wasmCallMainFinished") {
+        // Flip raw output to display.
+        // window.ireeOutputEditor.setValue(rawOutputText);
+
+        const rawTextLines = rawOutputText.split("\n");
+        for (const rawTextLine of rawTextLines) {
+          if (rawTextLine.startsWith("// ***")) {
+            splitOutputText.push(rawTextLine);
+            continue;
+          } else {
+            splitOutputText[splitOutputText.length - 1] += "\n" + rawTextLine;
+          }
+        }
+        optOutputSlider.min = 0;
+        optOutputSlider.max = splitOutputText.length;
+        optOutputSlider.value = 0;
+        window.ireeOutputEditor.setValue(splitOutputText[0]);
+
+        // Reset transient state.
+        rawOutputText = "";
+        hasRealOutputStarted = false;
+      } else if (event.data.message == "wasmPrint") {
+        // TODO(scotttodd): mode switch between stdout and stderr, based
+        //                  on if `-print-ir-after` is used
+        // rawOutputText += event.data.text + "\n";
+        // console.log(text);
+      } else if (event.data.message == "wasmPrintErr") {
+        if (!hasRealOutputStarted && event.data.text.startsWith("// ***")) {
+          hasRealOutputStarted = true;
+        }
+        if (hasRealOutputStarted) {
+          rawOutputText += event.data.text + "\n";
+        }
+        // console.warn(text);
+      }
+    });
+
+    function runIreeOpt() {
+      // TODO(scotttodd): sanitize (remove trailing spaces, etc.)
+      const flags = window.ireeFlagsEditor.getValue().split(" ");
+
+      wasmFrameWindow.postMessage({
+        message: "runIreeOpt",
+        flags: flags,
+        fileContents: window.ireeInputEditor.getValue(),
+      }, "*");
+
+      // Reload the <iframe> since the wasm module is not re-entrant.
+      // TODO(scotttodd): https://github.com/google/iree/issues/3817
+      //   compiler C API that we can call into multiple times
+      wasmFrameWindow.location.reload();
+    }
+
+  </script>
+</body>
+
+</html>
