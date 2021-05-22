@@ -28,3 +28,5 @@ compile_commands.json
 # build dirs
 build/
 ./runners/build/
+
+node_modules/
