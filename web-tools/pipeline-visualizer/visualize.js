@@ -30,34 +30,78 @@ function countOpsInSection(sectionText) {
   const nonStdOpRegex = /^\s*%[0-9,a-z,_,A-Z]+\s\=\s"?(?<dialect>[a-z]+)\./;
   const stdOpRegex = /^\s*%[0-9,a-z,_,A-Z]+\s\=\s"?(?<dialect>[a-z]+)/;
 
+  // Alternate form like `vm.rodata @ssa_name dense<...`
+  //   ^\s*                 Skip over whitespace at the start of the line
+  //   (?<dialect>[a-z]+)   Capture group for the first part of the op name
+  //   \.                   Dot literal
+  const alternateFormOpRegex = /^\s*(?<dialect>[a-z]+)\./;
+
+  // Miscellaneous lines that aren't directly ops themselves
+  //   ^\s*                 Skip over whitespace at the start of the line
+  //   }                    Close scope
+  //   ])                   Close scope
+  //   \^                   Enter basic block
+  //   \/                   // comment
+  //   module               Keyword
+  //   func                 Keyword
+  //   return               Keyword
+  const skipRegex = /^\s*(}|\]\)|\^|\/|module|func|return)/;
+
+  const kSkipSections = false;
+  const skipSectionsRegex = /After\s(Canonicalizer|CSE|SymbolDCE)/;
+
+  // TODO(scotttodd): other forms:
+  //  Assignment (should skip):
+  //    %c1 = (%buffer_0 : !hal.buffer)[%c96, %c4]
+  //  std.cond_br (control flow):
+  //    cond_br %0, ^bb1, ^bb2
+  //    br ^bb3(%exe : !hal.executable)
+  //    br ^bb3(%4 : !hal.executable)
+
   opCounts = {};
 
+  // Normalize line endings.
+  sectionText.replace(/\r\n/g, '\n');
+
   const sectionLines = sectionText.split('\n');
+  if (kSkipSections && sectionLines[0].match(skipSectionsRegex)) {
+    return null;
+  }
+  console.log('Section: ' + sectionLines[0]);
+
   for (const line of sectionLines) {
-    // console.log('Line: ' + line);
+    // Skip empty or obviously broken lines.
+    if (!line || line.length < 5) {
+      continue;
+    }
 
     const matches = line.match(nonStdOpRegex);
     if (matches) {
       const dialect = matches.groups['dialect'];
-      // console.log(dialect);
-      // console.log();
-
-      if (opCounts[dialect]) {
-        opCounts[dialect]++;
-      } else {
-        opCounts[dialect] = 1;
-      }
+      opCounts[dialect] = ++opCounts[dialect] || 1;
       continue;
     }
 
     const stdMatches = line.match(stdOpRegex);
     if (stdMatches) {
-      if (opCounts['standard']) {
-        opCounts['standard']++;
-      } else {
-        opCounts['standard'] = 1;
-      }
+      opCounts['standard'] = ++opCounts['standard'] || 1;
+      continue;
     }
+
+    const alternateMatches = line.match(alternateFormOpRegex);
+    if (alternateMatches) {
+      const dialect = alternateMatches.groups['dialect'];
+      opCounts[dialect] = ++opCounts[dialect] || 1;
+      continue;
+    }
+
+    const skipMatches = line.match(skipRegex);
+    if (skipMatches) {
+      continue;
+    }
+
+    opCounts['unknown'] = ++opCounts['unknown'] || 1;
+    // console.log('Unknown line: ' + line);
   }
 
   return opCounts;
@@ -90,8 +134,11 @@ fs.readFile(argv.input, 'utf8', function(error, data) {
     // }
 
     const sectionText = textSections[i];
+
     opCounts = countOpsInSection(sectionText);
     // console.log('Ops in section #' + i + ': ');
-    console.log(opCounts);
+    if (opCounts) {
+      console.log(opCounts);
+    }
   }
 });
