@@ -14,6 +14,7 @@ The hope is to shine some light on the possibilities in this space, generate int
   * Parse through step-by-step compilation output then create interactive visualizations
   * Highlight compilation stages with interesting properties (e.g. dialect conversion, memory planning)
   * Visualize statistics like how many ops in each dialect exist after each pass or how much IR exists in a top level module
+    * Picture a chart [like this](https://observablehq.com/@mbostock/revenue-by-music-format-1973-2018) with one color/series per dialect, checkpoints through compilation on the x axis, and the number of ops on the y axis
   * Show/hide generic passes like canonicalize/CSE
 * Bug reproducers
   * Share a URL that runs a tool at a specific commit on an input file with a set of flags
