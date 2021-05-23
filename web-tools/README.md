@@ -64,7 +64,12 @@ Optional components (e.g. frontends/backends)
 | Flag                                    | Use here                                                    |
 |-----------------------------------------|-------------------------------------------------------------|
 | `-print-ir-after-all`                   | Print the full output of a compilation pipeline             |
+| `-print-ir-module-scope`                | Print the top level operation when printing                 |
 | `-mlir-disable-threading`               | Run single threaded for consistent ordering                 |
 | `-mlir-elide-elementsattrs-if-larger=N` | Elide large attributes (e.g. model weights) to trim outputs |
 
-See also https://mlir.llvm.org/getting_started/Debugging/
+See also
+
+* https://mlir.llvm.org/getting_started/Debugging/
+* https://github.com/llvm/llvm-project/blob/main/mlir/lib/Pass/PassManagerOptions.cpp
+* https://github.com/llvm/llvm-project/blob/main/mlir/lib/IR/MLIRContext.cpp
