@@ -107,6 +107,7 @@ function countOpsInSection(sectionText) {
   return opCounts;
 }
 
+// TODO(scotttodd): stream via `createReadStream` (for files larger th an 256MB)
 console.log('Reading input file: \"' + argv.input + '\"');
 fs.readFile(argv.input, 'utf8', function(error, data) {
   if (error) {
