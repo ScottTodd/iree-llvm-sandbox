@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>MLIR Pipeline Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- https://getbootstrap.com/ for some webpage styling-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <link href="../stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #0d0f15; color: #ABB2BF">
+  <h1>MLIR Pipeline Visualizer</h1>
+
+  <!--
+  <p>
+    Code editor powered by <a href="https://codemirror.net/">CodeMirror</a> and
+    using
+    <a href="https://github.com/NeekSandhu/codemirror-textmate">codemirror-textmate</a>
+    for syntax highlighting with
+    <a href="https://github.com/llvm/llvm-project/blob/main/mlir/utils/textmate/mlir.json">MLIR syntax</a>.
+  </p>
+
+  <p>
+    Running the IREE compiler tool
+    <a href="https://github.com/google/iree/blob/main/iree/tools/iree-opt-main.cc">iree-opt</a>
+    compiled to WebAssembly via <a href="https://emscripten.org/">Emscripten</a>.
+    See
+    <a href="https://gist.github.com/ScottTodd/7898981998cefb60902d4fbc8a471ccf">this gist</a>
+    and
+    <a href="https://gist.github.com/ScottTodd/f30d9d26254de82648de37d5ed445cbc">this gist</a>
+    for instructions on how to build MLIR tools through Emscripten.
+  </p> -->
+
+  <p>Input:</p>
+  <textarea id="opt-input"></textarea>
+  <br>
+  <p>Output:</p>
+  <!-- TODO(scotttodd): css, lol (this is tiny and looks bad) -->
+  <input type="range" min="1" max="100" value="50" class="form-range" id="opt-output-slider">
+  <!-- <textarea id="opt-output"></textarea> -->
+  <!-- <br>
+  <p>Flags:</p>
+  <textarea id="opt-flags"></textarea> -->
+
+  <!-- <iframe id="wasmFrame" src="../iree-opt-frame.html" style="display: none;"></iframe> -->
+
+  <!--
+    This file was generated from https://github.com/NeekSandhu/codemirror-textmate/tree/master/demo
+    * Add MLIR syntax ('source.mlir', language: 'mlir')
+    * Copy files from chrome dev tools when running the dev server
+      (should really be a release mode nodejs/webpack thing)
+    * It then has some manual edits to interface with this script like setting
+      `inputEditor = inputEditor`
+      (exporting from module-private variables to globals... very hacky)
+    * It requires onigasm.wasm (see https://github.com/NeekSandhu/onigasm)
+  -->
+  <!-- TODO(scotttodd): non-dev build (strip dev server code? minify?) -->
+  <!-- <script src="../libraries/codemirror-textmate.js"></script> -->
+
+  <script>
+    let editor;
+
+    window.onCodemirrorLoaded = () => {
+      editor = window.ireeInputEditor;
+      editor.setSize(undefined, 150);
+
+      editor.setValue(`func @add(%arg0 : tensor<i32>, %arg1 : tensor<i32>) -> (tensor<i32>) attributes { iree.module.export } {
+  %result = "mhlo.add"(%arg0, %arg1) : (tensor<i32>, tensor<i32>) -> tensor<i32>
+  return %result : tensor<i32>
+}`);
+    };
+
+    const optOutputSlider = document.getElementById("opt-output-slider");
+    let rawOutputText = "";
+    let splitOutputText = [];
+
+    optOutputSlider.addEventListener("input", (event) => {
+      if (event.target.value < splitOutputText.length) {
+        outputEditor.setValue(splitOutputText[event.target.value]);
+      }
+    });
+  </script>
+</body>
+
+</html>
