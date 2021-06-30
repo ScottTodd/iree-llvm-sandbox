@@ -1,0 +1,4087 @@
+[
+  {
+    "passName": "mlir::iree_compiler::IREE::ABI::WrapEntryPointsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Inliner",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "SymbolDCE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "SCFToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ShapeToShapeLowering",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ConvertShapeToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "PromoteTensorLoads",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Inliner",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "MHLOToMHLOPreprocessing",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "LegalizeInputTypes",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ConvertMHLOToLinalgOnTensors",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "VerifyCompilerMHLOInputLegality",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ExpandVariableDynamicDims",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::Shape::`anonymous-namespace'::ExpandFunctionDynamicDimsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ConvertConv2D1x1ConvToMatmul",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "PadTensorToSubTensorInsert",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ConvertElementwiseToLinalg",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "LinalgFoldUnitExtentDims",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "FusionOfTensorOps",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ConvertToFlowTensorOps",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ResolveShapedTypeResultDims",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "DispatchLinalgOnTensors",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 4
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 4
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "ResolveShapedTypeResultDims",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 4
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 4
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 4
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "OutlineDispatchRegions",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "DeduplicateExecutables",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "PromoteTensorLoads",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "HoistUnstreamableOps",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 6
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "FormStreams",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "OutlineLargeConstants",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "SymbolDCE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::IdentifyConstantPoolsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::MaterializeConstantPoolBuffersPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "SymbolDCE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 2
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 8
+      },
+      {
+        "dialectName": "std",
+        "opCount": 4
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::MaterializeInterfacesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 17
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 5
+      },
+      {
+        "dialectName": "std",
+        "opCount": 5
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::PropagateConstantWorkgroupInfoPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 17
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 5
+      },
+      {
+        "dialectName": "std",
+        "opCount": 5
+      }
+    ]
+  },
+  {
+    "passName": "SetNumWorkgroups",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 5
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 3
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 5
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "LinalgBufferize",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 20
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 5
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 4
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 20
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 5
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 4
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "ResolveShapedTypeResultDims",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 20
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 20
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 20
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "CleanupBufferAllocView",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "LLVMCPUPlanConvLoopOrder",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "LLVMCPULowerExecutableTarget",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::Shape::`anonymous-namespace'::CleanupShapePlaceholdersPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "linalg",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      }
+    ]
+  },
+  {
+    "passName": "LinalgLowerToLoops",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ConvertVectorToSCF",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "TensorConstantBufferize",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "FoldTensorExtractOp",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "FoldSubViewOps",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "FlattenMemRefSubspan",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "NormalizeMemRefs",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "AffineScalarReplacement",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 18
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 6
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VMVX::ConversionPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 8
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 8
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ConvertAffineToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "ForOpCanonicalization",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "LoopInvariantCodeMotion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "LoopCoalescing",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "AffineLoopFusion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "LoopInvariantCodeMotion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "SCFToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      },
+      {
+        "dialectName": "memref",
+        "opCount": 2
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VM::ConversionPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 14
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VM::HoistInlinedRodataPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 14
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VM::GlobalInitializationPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 14
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 14
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "Inliner",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "SymbolDCE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::TranslateExecutablesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 12
+      },
+      {
+        "dialectName": "flow",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 3
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::`anonymous-namespace'::ConvertToHALPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 26
+      },
+      {
+        "dialectName": "std",
+        "opCount": 8
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::Shape::`anonymous-namespace'::ExpandFunctionRankedShapeDimsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 26
+      },
+      {
+        "dialectName": "std",
+        "opCount": 8
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 25
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 25
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::PackAllocationsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 25
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 25
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::LinkExecutablesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 25
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::ResolveEntryPointOrdinalsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 27
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 27
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 27
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 27
+      },
+      {
+        "dialectName": "std",
+        "opCount": 7
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::MaterializeResourceCachesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 1
+      },
+      {
+        "dialectName": "std",
+        "opCount": 10
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::InlineDeviceSwitchesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 1
+      },
+      {
+        "dialectName": "std",
+        "opCount": 10
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::InlineDeviceSwitchesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 1
+      },
+      {
+        "dialectName": "std",
+        "opCount": 10
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::InlineDeviceSwitchesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 39
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 15
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::InlineDeviceSwitchesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 17
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 17
+      }
+    ]
+  },
+  {
+    "passName": "ConvertAffineToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 17
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::MemoizeDeviceQueriesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::CSEVariableLoadsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::CSEVariableLoadsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::CSEVariableLoadsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 3
+      },
+      {
+        "dialectName": "std",
+        "opCount": 18
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 16
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 16
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::CSEVariableLoadsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 12
+      },
+      {
+        "dialectName": "hal",
+        "opCount": 41
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 16
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::SerializeExecutablesPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 39
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 15
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::HAL::CSEVariableLoadsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "SymbolDCE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopCoalescing",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "AffineLoopFusion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopInvariantCodeMotion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopCoalescing",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "AffineLoopFusion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopInvariantCodeMotion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopCoalescing",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "AffineLoopFusion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopInvariantCodeMotion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopCoalescing",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "AffineLoopFusion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopInvariantCodeMotion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopCoalescing",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "AffineLoopFusion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "LoopInvariantCodeMotion",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "SCFToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "SCFToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "SCFToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "SCFToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "SCFToStandard",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "hal",
+        "opCount": 38
+      },
+      {
+        "dialectName": "iree",
+        "opCount": 2
+      },
+      {
+        "dialectName": "std",
+        "opCount": 13
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VM::ConversionPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 112
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VM::HoistInlinedRodataPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 114
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VM::GlobalInitializationPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 125
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 125
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 125
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 123
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 123
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 123
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 120
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 120
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 111
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 111
+      }
+    ]
+  },
+  {
+    "passName": "Inliner",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 107
+      }
+    ]
+  },
+  {
+    "passName": "Canonicalizer",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 107
+      }
+    ]
+  },
+  {
+    "passName": "CSE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 107
+      }
+    ]
+  },
+  {
+    "passName": "SymbolDCE",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 85
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::VM::SinkDefiningOpsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 85
+      }
+    ]
+  },
+  {
+    "passName": "mlir::detail::OpToOpPassAdaptor",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 85
+      }
+    ]
+  },
+  {
+    "passName": "mlir::iree_compiler::IREE::DropCompilerHintsPass",
+    "dialectOpCounts": [
+      {
+        "dialectName": "vm",
+        "opCount": 85
+      }
+    ]
+  }
+]
