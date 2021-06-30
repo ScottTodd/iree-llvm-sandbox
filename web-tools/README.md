@@ -4,6 +4,13 @@ This folder contains a set of prototype web-based tools for interacting with MLI
 
 The hope is to shine some light on the possibilities in this space, generate interest, and see which directions the community wants to explore further.
 
+## Demos
+
+* **IREE-Fiddle**: https://scotttodd.github.io/iree-llvm-sandbox/web-tools/iree-pipeline-inspector/
+  * Run IREE's compiler in your browser then scroll through IR output pass by pass
+* **Pipeline Visualizer**: https://scotttodd.github.io/iree-llvm-sandbox/web-tools/pipeline-visualizer/
+  * An interactive chart showing dialects come and go during program compilation
+
 ## Motivating Use Cases
 
 * Interactive documentation for passes
