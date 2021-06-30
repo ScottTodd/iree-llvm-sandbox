@@ -1,17 +1,24 @@
 function fetchData() {
-  fetch('./data/simple_abs_vmvx_06_30_ops.json')
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  let jsonFilePath = urlParams.get('data');
+  if (!jsonFilePath) {
+    jsonFilePath = './data/bert_encoder_unrolled_llvmaot_06_30_ops.json'
+  }
+  const fileName = jsonFilePath.substring(
+      jsonFilePath.lastIndexOf('/') + 1, jsonFilePath.length - 5);
+
+  fetch(jsonFilePath)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         const seriesData = processRawData(data);
-        setupChart(seriesData, 'simple_abs_vmvx');
+        setupChart(seriesData, fileName);
       });
 }
 
 function processRawData(rawData) {
-  console.log('got', rawData.length, 'rows of data');
-
   // We'll create one chart series per dialect, so first enumerate all dialects.
   const dialectNamesSet = new Set();
   for (let i = 0; i < rawData.length; ++i) {
@@ -23,6 +30,7 @@ function processRawData(rawData) {
   // Convert to a sorted list.
   const dialectNamesSorted = Array.from(dialectNamesSet).sort();
 
+  // from https://google.github.io/palette.js/ (should integrate directly)
   const colors = [
     '#ff0029',
     '#377eb8',
@@ -31,23 +39,33 @@ function processRawData(rawData) {
     '#00d2d5',
     '#ff7f00',
     '#af8d00',
+    '#7f80cd',
+    '#b3e900',
+    '#c42e60',
+    '#a65628',
+    '#f781bf',
+    '#8dd3c7',
+    '#bebada',
+    '#fb8072',
   ];
 
+  // Create one series per dialect, filling 'dataPoints' with op counts at
+  // each pass index (some many be 0).
   // TODO(scotttodd): optimize iteration scheme (this has redundant iterations)
   const seriesData = [];
   for (let i = 0; i < dialectNamesSorted.length; ++i) {
     const dialectName = dialectNamesSorted[i];
     const dataPoints = [];
     for (let j = 0; j < rawData.length; ++j) {
-      let count = 0;
+      let opCount = 0;
       const dialectOpCounts = rawData[j]['dialectOpCounts'];
       for (let k = 0; k < dialectOpCounts.length; ++k) {
         if (dialectOpCounts[k]['dialectName'] == dialectName) {
-          count = dialectOpCounts[k]['opCount'];
+          opCount = dialectOpCounts[k]['opCount'];
           break;
         }
       }
-      dataPoints.push({x: j, y: count, passName: rawData[j]['passName']});
+      dataPoints.push({x: j, y: opCount, passName: rawData[j]['passName']});
     }
 
     seriesData.push({
@@ -71,11 +89,16 @@ function setupChart(seriesData, titleDataDescription) {
       fontFamily: 'arial black',
       fontColor: 'black'
     },
-    axisX: {interval: 10, intervalType: 'number'},
+    axisX: {
+      interval: 100,
+      intervalType: 'number',
+      title: 'Pass #',
+    },
     axisY: {
       valueFormatString: '#0 ops',
       gridColor: '#B6B1A8',
-      tickColor: '#B6B1A8'
+      tickColor: '#B6B1A8',
+      title: 'Op count',
     },
     toolTip: {shared: true, content: toolTipContent},
     data: seriesData,
@@ -95,8 +118,9 @@ function toolTipContent(e) {
     seriesTooltips = seriesTooltips.concat(seriesTooltipLine);
   }
 
-  const tooltipTitle = '<span style = "color:Black;">' +
-      e.entries[0].dataPoint['passName'] + '</span><br/>';
+  const tooltipTitle = '<span style = "color:Black;">Pass #' +
+      e.entries[0].dataPoint.x + ': ' + e.entries[0].dataPoint['passName'] +
+      '</span><br/>';
 
   const tooltipFooter =
       '<span style = "color:Black">Total:</span> ' + totalOps + ' ops<br/>';

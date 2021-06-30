@@ -6,7 +6,32 @@
 </head>
 
 <body>
-  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+  <p>
+  <h2>MLIR Pipeline Visualizer Prototype
+  </h2>
+  See
+  <a href="https://github.com/ScottTodd/iree-llvm-sandbox/tree/web-tools/web-tools/pipeline-visualizer">the source
+    code</a>
+  for background and details.
+  </p>
+  <br>
+
+  <hr>
+  <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+  <hr>
+
+  <br>
+  <p>
+  <h2>Load data:</h2>
+  <ul>
+    <li><a href=".?data=./data/simple_abs_vmvx.json">IREE simple_abs vmvx</a></li>
+    <li><a href=".?data=./data/simple_abs_llvmaot.json">IREE simple_abs llvmaot</a></li>
+    <li><a href=".?data=./data/bert_encoder_vmvx.json">IREE bert_encoder vmvx</a></li>
+    <li><a href=".?data=./data/bert_encoder_llvmaot.json">IREE bert_encoder llvmaot</a></li>
+    <!-- TODO(scotttodd): drag and drop a local .json file -->
+  </ul>
+
+  </p>
 
   <!-- TODO(scotttodd): find a different library? this looked easy but... https://canvasjs.com/license/ -->
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
