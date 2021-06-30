@@ -3,7 +3,7 @@ function fetchData() {
   const urlParams = new URLSearchParams(queryString);
   let jsonFilePath = urlParams.get('data');
   if (!jsonFilePath) {
-    jsonFilePath = './data/bert_encoder_unrolled_llvmaot_06_30_ops.json'
+    jsonFilePath = './data/bert_encoder_llvmaot.json'
   }
   const fileName = jsonFilePath.substring(
       jsonFilePath.lastIndexOf('/') + 1, jsonFilePath.length - 5);
